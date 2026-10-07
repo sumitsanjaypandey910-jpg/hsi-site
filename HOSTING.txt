@@ -1,0 +1,11 @@
+STATIC HOSTING (free, custom domain allowed)
+
+Netlify:  Add new site > Import from GitHub > pick repo > Deploy
+          (netlify.toml already has the build settings)
+Vercel:   Add New > Project > pick repo > Deploy
+          (vercel.json already has the build settings)
+Cloudflare Pages: Build command: npx vite build   Output: dist
+
+Backend (server.ts) is NOT needed. Do not use "npm start".
+Firebase: add your live domain in Firebase Console >
+Authentication > Settings > Authorized domains.

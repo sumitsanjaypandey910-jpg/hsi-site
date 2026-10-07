@@ -1,0 +1,7 @@
+{
+  "name": "Horizon Secure Investments",
+  "description": "Official portal for Horizon Secure Investments (HSI) - Securing Tomorrow's Wealth. Comprehensive Mutual Funds, Insurance, Stocks, Bonds, Fractional Property, Loans, and Partner Network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

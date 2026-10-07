@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "siteContent": {
+      "description": "Dynamic website content for Horizon Secure Investments, editable via Admin Panel",
+      "fields": {
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        },
+        "updatedBy": {
+          "type": "string",
+          "description": "Email or UID of admin who updated"
+        }
+      }
+    },
+    "admins": {
+      "description": "Admin user profiles and roles",
+      "fields": {
+        "email": {
+          "type": "string",
+          "description": "Admin email"
+        },
+        "role": {
+          "type": "string",
+          "description": "Role, e.g. admin"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        }
+      }
+    },
+    "consultations": {
+      "description": "Client consultation requests submitted through the portal",
+      "fields": {
+        "name": {
+          "type": "string",
+          "description": "Client name"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact phone"
+        },
+        "email": {
+          "type": "string",
+          "description": "Client email"
+        },
+        "product": {
+          "type": "string",
+          "description": "Requested product or service"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Submission timestamp"
+        }
+      }
+    }
+  }
+}

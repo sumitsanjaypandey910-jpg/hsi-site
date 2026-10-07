@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+  
+  h1, h2, h3, .font-heading {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+.text-gold-gradient,
+.text-orange-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 45%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient,
+.bg-orange-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 45%, #ea580c 100%);
+}
+
+.border-gold,
+.border-orange {
+  border-color: #f97316;
+}
+
+/* WordPress-style smooth transitions and card shadows */
+.wp-card {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px -10px rgba(15, 23, 42, 0.12);
+}
