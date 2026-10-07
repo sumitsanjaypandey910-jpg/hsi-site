@@ -1,0 +1,20 @@
+name: Unzip project
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip and commit
+        run: |
+          unzip -q Website-updated.zip -d _tmp
+          cp -a _tmp/Website--main/. .
+          rm -rf _tmp Website-updated.zip
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          git commit -m "Extract project"
+          git push
